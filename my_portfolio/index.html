@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="description" content="My Portfolio">
+     <meta name="keywords" content="Portfolio">
+     <meta name="author" content="Mark Gian T. Abejero">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>My Portfolio</title>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/boxicons/2.0.7/css/boxicons.min.css">
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+     <link rel="stylesheet" href="style.css" />
+</head>
+
+ <body>
+     <div class="background"></div>
+     <div class="sidebar">
+         <div class="top">
+             <div class="logo">
+                 <i class="bx bx-code-alt"></i>
+                 <span class="bold">Portfolio</span>
+             </div>
+             <i class="bx bx-menu" id="btn1"></i>
+         </div>
+
+         <div class="users">
+             <img src="mainPROFILE.png" alt="me" class="user-img">
+             <div>
+                 <p class="bold">Mark Gian Abejero</p>
+                 <h5><span class="text"></span></h5>
+             </div>
+         </div>
+
+         <ul>
+             <li>
+                 <a href="#" data-tab="tab-top">
+                     <i class="bx bx-home-alt-2"></i>
+                     <span class="nav-item">Home</span>
+                 </a>
+                 <span class="tooltip">Home</span>
+             </li>
+             <li>
+                 <a href="#" data-tab="tab-front">
+                     <i class="bx bx-folder-open"></i>
+                     <span class="nav-item">Project</span>
+                 </a>
+                 <span class="tooltip">Project</span>
+             </li>
+             <li>
+                 <a href="#" data-tab="tab-bottom">
+                     <i class="bx bx-id-card"></i>
+                     <span class="nav-item">Contact</span>
+                 </a>
+                 <span class="tooltip">Contact</span>
+             </li>
+             <li>
+                 <a href="#" data-tab="tab-left">
+                     <i class="bx bx-conversation"></i>
+                     <span class="nav-item">Skills</span>
+                 </a>
+                 <span class="tooltip">Skills</span>
+             </li>
+             <li>
+                 <a href="#" data-tab="tab-right">
+                     <i class="bx bx-pen"></i>
+                     <span class="nav-item">Education</span>
+                 </a>
+                 <span class="tooltip">Education</span>
+             </li>
+             <li>
+                 <a href="#" data-tab="tab-back">
+                     <i class="bx bx-book-bookmark"></i>
+                     <span class="nav-item">Experience</span>
+                 </a>
+                 <span class="tooltip">Experience</span>
+             </li>
+         </ul>
+      </div>
+
+     <div class="main-content">
+         <div class="container">
+             <input type="checkbox" id="darkmode-toggle" />
+             <label for="darkmode-toggle">
+                 <svg version="1.1" class="sun" width="40px" height="30px" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji" preserveAspectRatio="xMidYMid meet" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path fill="#FFAC33" d="M16 2s0-2 2-2s2 2 2 2v2s0 2-2 2s-2-2-2-2V2zm18 14s2 0 2 2s-2 2-2 2h-2s-2 0-2-2s2-2 2-2h2zM4 16s2 0 2 2s-2 2-2 2H2s-2 0-2-2s2-2 2-2h2zm5.121-8.707s1.414 1.414 0 2.828s-2.828 0-2.828 0L4.878 8.708s-1.414-1.414 0-2.829c1.415-1.414 2.829 0 2.829 0l1.414 1.414zm21 21s1.414 1.414 0 2.828s-2.828 0-2.828 0l-1.414-1.414s-1.414-1.414 0-2.828s2.828 0 2.828 0l1.414 1.414zm-.413-18.172s-1.414 1.414-2.828 0s0-2.828 0-2.828l1.414-1.414s1.414-1.414 2.828 0s0 2.828 0 2.828l-1.414 1.414zm-21 21s-1.414 1.414-2.828 0s0-2.828 0-2.828l1.414-1.414s1.414-1.414 2.828 0s0 2.828 0 2.828l-1.414 1.414zM16 32s0-2 2-2s2 2 2 2v2s0 2-2 2s-2-2-2-2v-2z"></path><circle fill="#FFAC33" cx="18" cy="18" r="10"></circle></g></svg>
+                 <svg version="1.1" class="moon" fill="#ffffff" width="40px" height="30px" viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M 31.2110 14.9453 C 31.4922 14.9453 31.6563 14.7578 31.7031 14.5000 C 32.4297 10.6094 32.4063 10.5156 36.4610 9.7187 C 36.7422 9.6719 36.9063 9.5312 36.9063 9.2500 C 36.9063 8.9453 36.7422 8.8047 36.4610 8.7578 C 32.4063 7.9375 32.4297 7.8672 31.7031 3.9765 C 31.6563 3.7187 31.4922 3.5312 31.2110 3.5312 C 30.9297 3.5312 30.7891 3.7187 30.7422 3.9765 C 29.9922 7.8672 30.0391 7.9375 25.9610 8.7578 C 25.7031 8.8047 25.5157 8.9453 25.5157 9.2500 C 25.5157 9.5312 25.7031 9.6719 25.9610 9.7187 C 30.0626 10.5156 29.9922 10.6094 30.7422 14.5000 C 30.7891 14.7578 30.9297 14.9453 31.2110 14.9453 Z M 42.4375 30.7891 C 42.8594 30.7891 43.1641 30.4844 43.2110 30.0391 C 43.9844 23.7578 44.2891 23.5703 50.6406 22.5860 C 51.1561 22.4922 51.4609 22.2578 51.4609 21.7891 C 51.4609 21.3438 51.1561 21.0625 50.7342 20.9922 C 44.3360 19.7734 43.9844 19.8203 43.2110 13.5391 C 43.1641 13.0938 42.8594 12.7891 42.4375 12.7891 C 41.9922 12.7891 41.6875 13.0938 41.6407 13.5156 C 40.8204 19.8672 40.6094 20.0781 34.1172 20.9922 C 33.6953 21.0391 33.3907 21.3438 33.3907 21.7891 C 33.3907 22.2344 33.6953 22.4922 34.1172 22.5860 C 40.6094 23.7812 40.8438 23.8047 41.6407 30.0860 C 41.6875 30.4844 41.9922 30.7891 42.4375 30.7891 Z M 24.7891 52.4688 C 33.2735 52.4688 40.0469 48.1797 43.2813 40.9609 C 43.6797 40.0938 43.6094 39.3438 43.1875 38.9453 C 42.8126 38.5938 42.1563 38.5469 41.4297 38.8047 C 39.5313 39.5547 37.3047 39.9297 34.7500 39.9297 C 24.1094 39.9297 17.3126 33.2734 17.3126 22.8906 C 17.3126 19.9375 17.8750 17.1016 18.6016 15.6485 C 19.0000 14.8281 19.0000 14.1250 18.6485 13.6797 C 18.2266 13.2109 17.4766 13.1406 16.5626 13.4922 C 9.3672 16.3281 4.5391 23.9687 4.5391 32.5469 C 4.5391 43.9609 12.9531 52.4688 24.7891 52.4688 Z"></path></g></svg>
+             </label>
+         </div>
+
+         <div class="cube-container">
+             <input type="radio" name="tabs" id="tab-top" checked>
+             <input type="radio" name="tabs" id="tab-front">
+             <input type="radio" name="tabs" id="tab-bottom">
+             <input type="radio" name="tabs" id="tab-left">
+             <input type="radio" name="tabs" id="tab-right">
+             <input type="radio" name="tabs" id="tab-back">
+
+             <div class="cube">
+                 <div class="tab-content">
+                    <div class="box_content1">
+                        <img src="" alt="Description of Image">
+                        <p>Your text here</p>
+                    </div>
+                    <div class="box_content1">
+                        <img src="" alt="Description of Image">
+                        <p>Your text here</p>
+                    </div>
+                    <div class="box_content1">
+                        <img src="" alt="Description of Image">
+                        <p>Your text here</p>
+                    </div>
+                 </div>
+        
+                 <div class="tab-content">Projects</div>
+
+                 <div class="tab-content">Contact</div>
+
+                 <div class="tab-content">Skills</div>
+
+                 <div class="tab-content">Education</div>
+
+                 <div class="tab-content">Experience</div>
+             </div>
+         </div>
+         </div>
+     </div>
+
+     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+     <script>
+    // Toggle sidebar
+     let btn1 = document.querySelector('#btn1');
+     let sidebar = document.querySelector('.sidebar');
+     let cube = document.querySelector('.cube');
+
+     btn1.onclick = function () {
+     sidebar.classList.toggle('active');
+
+     if (sidebar.classList.contains('active')) {
+   // When sidebar is active
+     cube.style.setProperty('--cube-width', '1295px'); 
+     cube.style.setProperty('--cube-height', '640px');
+     } else {
+    // When sidebar is inactive
+     cube.style.setProperty('--cube-width', '1470px'); // Default width
+     cube.style.setProperty('--cube-height', '640px'); // Default height
+     }
+     };
+
+    // Dark mode toggle
+         const darkModeToggle = document.getElementById('darkmode-toggle');
+         darkModeToggle.addEventListener('change', function () {
+         document.body.classList.toggle('dark-mode', darkModeToggle.checked);
+         localStorage.setItem('dark-mode', darkModeToggle.checked ? 'enabled' : 'disabled');
+     });
+
+    // Check dark mode status on page load
+         if (localStorage.getItem('dark-mode') === 'enabled') {
+         document.body.classList.add('dark-mode');
+         darkModeToggle.checked = true;
+     }
+
+    // Initialize Typed.js effect
+         document.addEventListener('DOMContentLoaded', function() {
+         var options = {
+             strings: ['Student  ', '  ', 'Newbie  ', '  ', 'Future Data Analyst  '], 
+             typeSpeed: 200, 
+             loop: true
+         };
+         var typed = new Typed('.text', options);
+     });
+
+         document.querySelectorAll('.sidebar ul li a').forEach(link => {
+             link.addEventListener('click', function(event) {
+                 event.preventDefault(); 
+                 const tabId = this.getAttribute('data-tab');
+         document.getElementById(tabId).checked = true; 
+     });
+     });
+     </script>
+ </body>
+</html>
